@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/project/!svn/ver/618568/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine
+END
+route.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/618568/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/route.c
+END
+obj.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/project/!svn/ver/603339/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/obj.h
+END
+reply.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/593920/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/reply.h
+END
+access.c
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/project/!svn/ver/593920/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/access.c
+END
+store.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/618564/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/store.h
+END
+register.c
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/project/!svn/ver/618565/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/register.c
+END
+msg.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/project/!svn/ver/593920/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/msg.c
+END
+probe.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/618568/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/probe.c
+END
+core.c
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/project/!svn/ver/618568/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/core.c
+END
+reply.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/593920/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/reply.c
+END
+probe.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/599653/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/probe.h
+END
+store.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/project/!svn/ver/618568/06AUTOREALEASE/VP_VOOLE_PLATFORM/vp10_vpgslb/vp1001_vpgslb/branches/vpgslb/engine/store.c
+END

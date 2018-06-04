@@ -1,0 +1,9 @@
+
+Compile:
+    mkdir build
+    cd build
+    cmake ../
+    make
+
+BIN=vind*
+CONFIG_FILE=vind.cfg

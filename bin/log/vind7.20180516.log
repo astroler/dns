@@ -1,0 +1,273 @@
+17:30:49.806 [N 0x2b3f28caaf60] Archive init success.
+17:30:49.813 [N 0x2b3f28caaf60] Config init success.
+17:30:49.813 [N 0x2b3f28caaf60] Data structure init success.
+17:30:49.819 [N 0x2b3f28caaf60] vind init finish.
+17:30:59.949 [N 0x2b3f2cac4940] cmd 10
+17:30:59.949 [N 0x2b3f2cac4940] [parse] parse db=1
+
+17:30:59.950 [N 0x2b3f2cac4940] opper 0 db=1
+flushdb
+17:30:59.957 [N 0x2b3f2cac4940] cmd 0
+17:31:03.365 [N 0x2b3f2cac4940] cmd 1
+17:31:03.365 [N 0x2b3f2cac4940] [parse] parse name=var
+gtype=1
+ttl=500
+
+17:31:03.365 [N 0x2b3f2cac4940] Redis key [ZSCORE cdn:dns:business:register var] reply type 4, no result.
+17:31:03.366 [N 0x2b3f2cac4940] Redis key [ZADD cdn:dns:business:register 1 var ] reply type 3, no result.
+17:31:03.366 [N 0x2b3f2cac4940] [business] zadd business var bcode 1
+17:31:03.366 [N 0x2b3f2cac4940] Redis key [HGET cdn:dns:business:conf:1  num] reply type 4, no result.
+17:31:03.367 [N 0x2b3f2cac4940] opper 0 name=var
+gtype=1
+ttl=500
+
+17:31:03.374 [N 0x2b3f2cac4940] cmd 0
+17:31:39.204 [N 0x2b3f2cac4940] cmd 1
+17:31:39.204 [N 0x2b3f2cac4940] [parse] parse name=mt
+gtype=1
+ttl=500
+
+17:31:39.205 [N 0x2b3f2cac4940] Redis key [ZSCORE cdn:dns:business:register mt] reply type 4, no result.
+17:31:39.205 [N 0x2b3f2cac4940] Redis key [ZADD cdn:dns:business:register 1 mt ] reply type 3, no result.
+17:31:39.205 [N 0x2b3f2cac4940] [business] zadd business mt bcode 1
+17:31:39.206 [N 0x2b3f2cac4940] Redis key [HGET cdn:dns:business:conf:1  num] string reply <1>.
+17:31:39.206 [N 0x2b3f2cac4940] opper 0 name=mt
+gtype=1
+ttl=500
+
+17:31:39.219 [N 0x2b3f2cac4940] cmd 0
+17:40:20.333 [N 0x2ad8b51a2f60] Archive init success.
+17:40:20.333 [N 0x2ad8b51a2f60] Config init success.
+17:40:20.333 [N 0x2ad8b51a2f60] Data structure init success.
+17:40:20.339 [N 0x2ad8b51a2f60] vind init finish.
+17:40:30.698 [N 0x2ad8b8fbc940] cmd 10
+17:40:30.698 [N 0x2ad8b8fbc940] [parse] parse db=1
+
+17:40:30.699 [N 0x2ad8b8fbc940] opper 0 db=1
+flushdb
+17:40:30.712 [N 0x2ad8b8fbc940] cmd 0
+17:40:33.957 [N 0x2ad8b8fbc940] cmd 1
+17:40:33.957 [N 0x2ad8b8fbc940] [parse] parse name=mt
+gtype=1
+ttl=500
+
+17:40:33.957 [N 0x2ad8b8fbc940] Redis key [ZSCORE cdn:dns:business:register mt] reply type 4, no result.
+17:40:33.958 [N 0x2ad8b8fbc940] Redis command find a nil reply. key[ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores].
+17:40:33.958 [N 0x2ad8b8fbc940] Redis key [ZADD cdn:dns:business:register 2 mt ] reply type 3, no result.
+17:40:33.958 [N 0x2ad8b8fbc940] [business] zadd business mt bcode 2
+17:40:33.958 [N 0x2ad8b8fbc940] Redis key [HGET cdn:dns:business:conf:2  num] reply type 4, no result.
+17:40:33.959 [N 0x2ad8b8fbc940] opper 0 name=mt
+gtype=1
+ttl=500
+
+17:40:33.965 [N 0x2ad8b8fbc940] cmd 0
+17:41:08.114 [N 0x2ad8b8fbc940] cmd 1
+17:41:08.114 [N 0x2ad8b8fbc940] [parse] parse name=var
+gtype=1
+ttl=500
+
+17:41:08.114 [N 0x2ad8b8fbc940] Redis key [ZSCORE cdn:dns:business:register var] reply type 4, no result.
+17:41:08.114 [N 0x2ad8b8fbc940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <mt>.
+17:41:08.114 [N 0x2ad8b8fbc940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <2>.
+17:41:08.115 [N 0x2ad8b8fbc940] Redis key [ZADD cdn:dns:business:register 3 var ] reply type 3, no result.
+17:41:08.115 [N 0x2ad8b8fbc940] [business] zadd business var bcode 3
+17:41:08.115 [N 0x2ad8b8fbc940] Redis key [HGET cdn:dns:business:conf:3  num] reply type 4, no result.
+17:41:08.115 [N 0x2ad8b8fbc940] opper 0 name=var
+gtype=1
+ttl=500
+
+17:41:08.124 [N 0x2ad8b8fbc940] cmd 0
+17:42:21.179 [N 0x2b447378ef60] Archive init success.
+17:42:21.179 [N 0x2b447378ef60] Config init success.
+17:42:21.179 [N 0x2b447378ef60] Data structure init success.
+17:42:21.185 [N 0x2b447378ef60] vind init finish.
+17:42:25.561 [N 0x2b44775a9940] cmd 10
+17:42:25.561 [N 0x2b44775a9940] [parse] parse db=1
+
+17:42:25.561 [N 0x2b44775a9940] opper 0 db=1
+flushdb
+17:42:25.572 [N 0x2b44775a9940] cmd 0
+17:42:31.959 [N 0x2b44775a9940] cmd 1
+17:42:31.959 [N 0x2b44775a9940] [parse] parse name=var
+gtype=1
+ttl=500
+
+17:42:31.960 [N 0x2b44775a9940] Redis key [ZSCORE cdn:dns:business:register var] reply type 4, no result.
+17:42:31.960 [N 0x2b44775a9940] Redis command find a nil reply. key[ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores].
+17:42:31.960 [N 0x2b44775a9940] Redis key [ZADD cdn:dns:business:register 1 var ] reply type 3, no result.
+17:42:31.960 [N 0x2b44775a9940] [business] zadd business var bcode 1
+17:42:31.961 [N 0x2b44775a9940] Redis key [HGET cdn:dns:business:conf:1  num] reply type 4, no result.
+17:42:31.961 [N 0x2b44775a9940] opper 0 name=var
+gtype=1
+ttl=500
+
+17:42:31.969 [N 0x2b44775a9940] cmd 0
+17:43:20.344 [N 0x2b44775a9940] cmd 1
+17:43:20.344 [N 0x2b44775a9940] [parse] parse name=mt
+gtype=1
+ttl=500
+
+17:43:20.345 [N 0x2b44775a9940] Redis key [ZSCORE cdn:dns:business:register mt] reply type 4, no result.
+17:43:20.345 [N 0x2b44775a9940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <var>.
+17:43:20.345 [N 0x2b44775a9940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <1>.
+17:43:20.345 [N 0x2b44775a9940] Redis key [ZADD cdn:dns:business:register 1 mt ] reply type 3, no result.
+17:43:20.345 [N 0x2b44775a9940] [business] zadd business mt bcode 1
+17:43:20.346 [N 0x2b44775a9940] Redis key [HGET cdn:dns:business:conf:1  num] string reply <1>.
+17:43:20.346 [N 0x2b44775a9940] opper 0 name=mt
+gtype=1
+ttl=500
+
+17:43:20.359 [N 0x2b44775a9940] cmd 0
+17:44:05.041 [N 0x2ad143ef3f60] Archive init success.
+17:44:05.041 [N 0x2ad143ef3f60] Config init success.
+17:44:05.042 [N 0x2ad143ef3f60] Data structure init success.
+17:44:05.047 [N 0x2ad143ef3f60] vind init finish.
+17:44:09.503 [N 0x2ad147d0e940] cmd 10
+17:44:09.503 [N 0x2ad147d0e940] [parse] parse db=1
+
+17:44:09.504 [N 0x2ad147d0e940] opper 0 db=1
+flushdb
+17:44:09.511 [N 0x2ad147d0e940] cmd 0
+17:44:12.126 [N 0x2ad147d0e940] cmd 1
+17:44:12.126 [N 0x2ad147d0e940] [parse] parse name=mt
+gtype=1
+ttl=500
+
+17:44:12.126 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register mt] reply type 4, no result.
+17:44:12.127 [N 0x2ad147d0e940] Redis command find a nil reply. key[ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores].
+17:44:12.127 [N 0x2ad147d0e940] Redis key [ZADD cdn:dns:business:register 1 mt ] reply type 3, no result.
+17:44:12.127 [N 0x2ad147d0e940] [business] zadd business mt bcode 1
+17:44:12.127 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:conf:1  num] reply type 4, no result.
+17:44:12.128 [N 0x2ad147d0e940] opper 0 name=mt
+gtype=1
+ttl=500
+
+17:44:12.153 [N 0x2ad147d0e940] cmd 0
+17:44:17.343 [N 0x2ad147d0e940] cmd 1
+17:44:17.343 [N 0x2ad147d0e940] [parse] parse name=var
+gtype=1
+ttl=500
+
+17:44:17.343 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register var] reply type 4, no result.
+17:44:17.343 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <mt>.
+17:44:17.343 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <1>.
+17:44:17.344 [N 0x2ad147d0e940] Redis key [ZADD cdn:dns:business:register 2 var ] reply type 3, no result.
+17:44:17.344 [N 0x2ad147d0e940] [business] zadd business var bcode 2
+17:44:17.344 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:conf:2  num] reply type 4, no result.
+17:44:17.344 [N 0x2ad147d0e940] opper 0 name=var
+gtype=1
+ttl=500
+
+17:44:17.355 [N 0x2ad147d0e940] cmd 0
+17:44:35.071 [N 0x2ad147d0e940] cmd 1
+17:44:35.071 [N 0x2ad147d0e940] [parse] parse name=ta
+gtype=1
+ttl=500
+
+17:44:35.072 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register ta] reply type 4, no result.
+17:44:35.072 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <mt>.
+17:44:35.072 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <1>.
+17:44:35.072 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <var>.
+17:44:35.072 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <2>.
+17:44:35.072 [N 0x2ad147d0e940] Redis key [ZADD cdn:dns:business:register 3 ta ] reply type 3, no result.
+17:44:35.072 [N 0x2ad147d0e940] [business] zadd business ta bcode 3
+17:44:35.073 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:conf:3  num] reply type 4, no result.
+17:44:35.073 [N 0x2ad147d0e940] opper 0 name=ta
+gtype=1
+ttl=500
+
+17:44:35.083 [N 0x2ad147d0e940] cmd 0
+17:44:53.504 [N 0x2ad147d0e940] cmd 5
+17:44:53.504 [N 0x2ad147d0e940] [parse] parse name=(null)
+opper=getall
+
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <mt>.
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <1>.
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <var>.
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <2>.
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <ta>.
+17:44:53.504 [N 0x2ad147d0e940] Redis key ZRANGE cdn:dns:business:register 0 -1 WITHSCORES array reply <3>.
+17:44:53.504 [N 0x2ad147d0e940] opper 0 name=(null)
+opper=getall
+Business name : mt, bcode : 1
+Business name : var, bcode : 2
+Business name : ta, bcode : 3
+
+17:44:53.514 [N 0x2ad147d0e940] cmd 0
+17:45:59.984 [N 0x2ad147d0e940] cmd 3
+17:45:59.984 [N 0x2ad147d0e940] [parse] parse ip=172.10.1.1
+port=80
+isp=001
+uri=/check/timeout/info
+name=varnish
+ptype=tcp
+area=2300
+cycle=30
+inuse=1
+
+17:45:59.984 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register varnish] reply type 4, no result.
+17:45:59.985 [N 0x2ad147d0e940] opper 0 ip=172.10.1.1
+port=80
+isp=001
+uri=/check/timeout/info
+name=varnish
+ptype=tcp
+area=2300
+cycle=30
+inuse=1
+not find business varnish registered 
+17:45:59.995 [N 0x2ad147d0e940] cmd 0
+17:49:20.371 [N 0x2ad147d0e940] cmd 2
+17:49:20.371 [N 0x2ad147d0e940] [parse] parse dom=upotv.com
+name=mt
+dtype=A
+cname=(null)
+inuse=1
+
+17:49:20.371 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register mt] string reply <1>.
+17:49:20.371 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:1:upotv.com  domain] reply type 4, no result.
+17:49:20.372 [N 0x2ad147d0e940] Redis key [HMSET cdn:dns:business:1:upotv.com domain upotv.com cname null dtype A inuse 1] reply type 5, no result.
+17:49:20.372 [N 0x2ad147d0e940] opper 0 dom=upotv.com
+name=mt
+dtype=A
+cname=(null)
+inuse=1
+add new domain mt with HMSET cdn:dns:business:1:upotv.com domain upotv.com cname null dtype A inuse 1
+17:49:20.382 [N 0x2ad147d0e940] cmd 0
+17:49:52.473 [N 0x2ad147d0e940] cmd 2
+17:49:52.473 [N 0x2ad147d0e940] [parse] parse dom=aft.com
+name=ta
+dtype=A
+cname=(null)
+inuse=1
+
+17:49:52.473 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register ta] string reply <3>.
+17:49:52.473 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:3:aft.com  domain] reply type 4, no result.
+17:49:52.474 [N 0x2ad147d0e940] Redis key [HMSET cdn:dns:business:3:aft.com domain aft.com cname null dtype A inuse 1] reply type 5, no result.
+17:49:52.474 [N 0x2ad147d0e940] opper 0 dom=aft.com
+name=ta
+dtype=A
+cname=(null)
+inuse=1
+add new domain ta with HMSET cdn:dns:business:3:aft.com domain aft.com cname null dtype A inuse 1
+17:49:52.482 [N 0x2ad147d0e940] cmd 0
+20:48:25.579 [N 0x2ad147d0e940] cmd 1
+20:48:25.579 [N 0x2ad147d0e940] [parse] parse name=varnish
+gtype=1
+ttl=500
+
+20:48:25.579 [N 0x2ad147d0e940] Redis key [ZSCORE cdn:dns:business:register varnish] reply type 4, no result.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <mt>.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <1>.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <var>.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <2>.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <ta>.
+20:48:25.579 [N 0x2ad147d0e940] Redis key ZRANGEBYSCORE cdn:dns:business:register -inf +inf withscores array reply <3>.
+20:48:25.580 [N 0x2ad147d0e940] Redis key [ZADD cdn:dns:business:register 4 varnish ] reply type 3, no result.
+20:48:25.580 [N 0x2ad147d0e940] [business] zadd business varnish bcode 4
+20:48:25.580 [N 0x2ad147d0e940] Redis key [HGET cdn:dns:business:conf:4  num] reply type 4, no result.
+20:48:25.580 [N 0x2ad147d0e940] opper 0 name=varnish
+gtype=1
+ttl=500
+
+20:48:25.799 [N 0x2ad147d0e940] cmd 0

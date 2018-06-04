@@ -1,0 +1,19 @@
+#LogIP    = 172.16.10.97:11111
+#Listen   = 16588
+#TTL      = 300
+##Redis    = 172.16.10.230
+#Redis    = redis.voole.com
+#RedisPort= 29879
+#RedisDb  = 1
+#RedisKey = 230ccn@Redis
+#NamePort = 5300
+#Httpport = 9980
+###
+
+Listen   = 6558
+TTL      = 300
+Redis    = 60.29.252.80
+RedisKey = szgRedis@81
+#NamePort = 9053
+Httpport = 6080
+

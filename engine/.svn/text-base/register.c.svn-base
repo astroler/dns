@@ -1,0 +1,440 @@
+/*************************************************************************
+File Name   :    register/core.c
+Author      :    Gzz 
+Mail        :    
+Created Time:    2016年12月27日 星期二 14时58分47秒
+ *************************************************************************/
+
+#if defined(HAVE_CONFIG_H)
+#include <config.h>
+#endif
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <sys/resource.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <signal.h>
+#include <errno.h>
+#include <limits.h>
+
+#include <gdsl.h>
+#include <event.h>
+#include <evhttp.h>
+#include <evdns.h>
+#include <sys/queue.h>
+
+#include "obj.h"
+#include "msg.h"
+#include "arch.h"
+#include "redis.h"
+#include "threads.h"
+
+#define ERR      -1
+#define SUC       0
+void httpd_handler(void *);
+struct event_base *regbase = NULL;
+pthread_mutex_t type_lock;
+pthread_mutex_t send_lock;
+//void httpd_handler(struct evhttp_request*req, void *reqtmp); 
+char	bussiness_name[64] = {0};
+char    max_score[10] = {0};
+char    score[10] = {0};
+typedef struct register_param{
+    char	ip[16];
+    char 	dom[128];
+    char 	type[51];   //- use for business type
+    char    isp[4];
+    char    url[1024];
+    char    port[10];
+    char 	ptype[51]; //- use for register type
+}register_param_t;
+    void 
+myfree(void  *d)
+{
+    register_param_t *data=(register_param_t *)d;
+
+    if (data != NULL)
+    {
+        free(data);
+        data = NULL;
+    }
+}
+    int 
+mystrlen(const char* str)
+{
+    if (str != NULL)
+        return strlen(str);
+    else
+        return 0;
+}
+    static int
+get_dns_type_max_score(int i,const char *str,void *phint)
+{
+    strcpy(max_score, str);
+    strcpy(score, max_score);
+    return 0 ;
+
+}
+    static int
+get_dns_type_max_key(int i,const char *str,void *phint)
+{
+    strcpy(bussiness_name, str);
+    return 0 ;
+
+}
+    static int
+get_dns_type(int i, const char * str, void *phint)
+{
+    register_param_t *reg_para = (register_param_t *)phint;
+    // check_type();
+    if (str != NULL)
+    {
+        strcpy(score,str);
+    }
+
+    return 0;
+
+}
+    static int
+get_dns_null(int i, const char *str, void *phint)
+{
+    return 0;
+}
+    static int 
+register_check(register_param_t *reg_para)
+{
+    //查询业务编号，有：返回 无：新建返回
+    // char *cmd = (char *)calloc(CMDLEN,1);
+    char cmd[CMDLEN] = {0};
+    int current_score = 0;
+    memset(cmd, 0, CMDLEN);
+    // pthread_mutex_lock(&type_lock);
+    snprintf(cmd,CMDLEN,"ZSCORE cdn:dns:type:register %s",reg_para->type);
+    int ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_type);
+    if (ret)
+    {
+        snprintf(cmd,CMDLEN,"ZRANGEBYSCORE cdn:dns:type:register -inf +inf ");
+        ret =redis_get_info(NULL, cmd, (void *)reg_para,get_dns_type_max_key);
+        if(!ret) 
+        {
+            memset(cmd,0, CMDLEN);
+            snprintf(cmd,CMDLEN,"ZSCORE cdn:dns:type:register %s ",bussiness_name);
+            ret =redis_get_info(NULL, cmd, (void *)reg_para, get_dns_type_max_score);
+            PRINT("%d\n",atoi(max_score));
+        }
+        else
+        {
+            strcpy(max_score , "0");
+        }
+        memset(cmd,0, CMDLEN);
+        snprintf(cmd,CMDLEN,"ZADD cdn:dns:type:register %d %s ",atoi(max_score)+1, reg_para->type);
+        ret =redis_get_info(NULL, cmd, (void *)reg_para,get_dns_null);
+        current_score = atoi(max_score)+1; 
+        //	pthread_mutex_unlock(&type_lock);
+
+    }
+    else
+    {
+        PRINT("%d\n",atoi(score));
+        current_score = atoi(score); 
+        //    pthread_mutex_unlock(&type_lock);
+    }
+    //查询域名是否插入可用表 ，已插入 inuse = 1 若否新建inuse=1
+    snprintf(cmd,CMDLEN,"HGET cdn:dns:business:%d:%s  name",current_score,reg_para->dom);
+    ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_null);
+    if(!ret)
+    {
+        //非空
+        snprintf(cmd,CMDLEN,"HSET cdn:dns:business:%d:%s  inuse 1",current_score,reg_para->dom);
+        ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_null);
+
+    }
+    else
+    {
+        snprintf(cmd,CMDLEN,"HSET cdn:dns:business:%d:%s  name %s",current_score,reg_para->dom,reg_para->dom);
+        ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_null);
+        snprintf(cmd,CMDLEN,"HSET cdn:dns:business:%d:%s  inuse 1",current_score,reg_para->dom);
+        ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_null);
+    }
+
+    uint64_t id =  inet_addr(reg_para->ip);
+    PRINT("%ld = id\n",id);
+    //生成node表 
+    snprintf(cmd,CMDLEN,
+            "HMSET cdn:dns:node:%ld-%s "
+            "id %ld "
+            "isp %s "
+            "type %d "
+            "ipaddr %s "
+            "port %s "    
+            "url %s "
+            "links 100 "
+            "width 100 "
+            "cpus 50 "
+            "memorys 50 "
+            "weight 0 "
+            "inuse 1 "
+            "ptype %s "
+            "cycle 10 "
+            "areacode 0 "
+            , id, reg_para->port, id, reg_para->isp, current_score, reg_para->ip, reg_para->port, reg_para->url, reg_para->ptype);
+    ret = redis_set_info(NULL, cmd);//, (void *)reg_para, get_dns_null);
+    //生成gtype表 如果没有便插入 有则不作操作
+    snprintf(cmd,CMDLEN,"HGET cdn:dns:%d:conf  num",current_score);
+    if (ret = redis_get_info(NULL, cmd, (void *)reg_para, get_dns_null) )
+    {
+        snprintf(cmd,CMDLEN,
+                "HMSET cdn:dns:%d:conf "
+                "num    1 "
+                "gtype  3 "
+                "ttl    30 "
+                ,current_score);
+        ret = redis_set_info(NULL, cmd);
+    } 
+    return 0;
+
+}
+#if 1
+    void 
+httpd_handler_dispatch(struct evhttp_request* req ,void* pdata)
+{
+    httpd_handler( (void *)req);
+    //pthread_mutex_lock(&send_lock);
+    //threads_dispatch(((content_t *)pdata)->pools, httpd_handler, (void *)req, 0);
+    //pthread_mutex_unlock(&send_lock);
+}
+
+#endif
+    void 
+httpd_handler( void *reqtmp) 
+{
+    struct evhttp_request *req = (struct evhttp_request*)reqtmp;
+    char output[2048] = {0};
+    char tmp[1024] = {0};
+    //输出缓存区 
+    struct evbuffer *buf = NULL;
+
+    //获取客户端请求的URI(使用evhttp_request_uri或直接req->uri)
+    const char *uri = NULL;
+
+    uri = evhttp_request_uri(req);
+    if(strstr(uri, "reg") == NULL)
+    {
+        goto illegal;
+
+    }
+    sprintf(tmp, "uri=%s\n", uri);
+    strcat(output, tmp);
+
+    //decoded uri
+    char *decoded_uri = evhttp_decode_uri(uri);
+    sprintf(tmp, "decoded_uri=%s\n", decoded_uri);
+
+    strcat(output, tmp);
+
+    //解析URI的参数(即GET方法的参数)
+    struct evkeyvalq params;
+    evhttp_parse_query(decoded_uri, &params);
+    register_param_t *reg_param = NULL ;
+    reg_param = (register_param_t *)calloc(1 , sizeof(register_param_t));
+    // reg_param->ip  = (char *)calloc(16 , 1);
+    //  PRINT("ip=%s\n",reg_param->ip);
+    //  reg_param->dom = (char *)calloc(128 , 1);
+    //  reg_param->type= (char *)calloc(64 , 1);
+    //  reg_param->isp= (char *)calloc(6 , 1);
+    //  reg_param->url= (char *)calloc(1024 , 1);
+    if(mystrlen(decoded_uri) >= 0 && mystrlen(decoded_uri) < 1024)
+    {
+        //		memcpy(reg_param->url,decoded_uri,strlen(reg_param->url));
+        strncpy(reg_param->url,decoded_uri,strlen(decoded_uri));
+    }
+    else
+    {
+        goto err;
+    }
+
+    sprintf(tmp, "ip=%s\n",  evhttp_find_header(&params, "ip"));
+    if (mystrlen(evhttp_find_header(&params, "ip")) != 0  &&
+            mystrlen(evhttp_find_header(&params, "ip")) <= 16)
+    {
+        //		memcpy(reg_param->ip,evhttp_find_header(&params, "ip"),strlen(evhttp_find_header(&params, "ip")));
+        strncpy(reg_param->ip,evhttp_find_header(&params, "ip"),strlen(evhttp_find_header(&params, "ip")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+    sprintf(tmp, "dom=%s\n", evhttp_find_header(&params, "dom"));
+    if (mystrlen(evhttp_find_header(&params, "dom")) != 0 &&
+            mystrlen(evhttp_find_header(&params, "dom")) <= 128)
+    {
+        //		memcpy(reg_param->dom,evhttp_find_header(&params, "dom"),strlen(evhttp_find_header(&params, "dom")));
+        strncpy(reg_param->dom,evhttp_find_header(&params, "dom"),strlen(evhttp_find_header(&params, "dom")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+    sprintf(tmp, "type=%s\n", evhttp_find_header(&params, "type"));
+    if (mystrlen(evhttp_find_header(&params, "type")) != 0 &&
+            mystrlen(evhttp_find_header(&params, "type")) <= 51)
+    {
+        //		memcpy(reg_param->type,evhttp_find_header(&params, "type"),strlen(evhttp_find_header(&params, "type")));
+        strncpy(reg_param->type,evhttp_find_header(&params, "type"),strlen(evhttp_find_header(&params, "type")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+    sprintf(tmp, "ptype=%s\n", evhttp_find_header(&params, "ptype"));
+    if (mystrlen(evhttp_find_header(&params, "ptype")) != 0 &&
+            mystrlen(evhttp_find_header(&params, "ptype")) <= 51)
+    {
+        strncpy(reg_param->ptype,evhttp_find_header(&params, "ptype"),strlen(evhttp_find_header(&params, "ptype")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+    sprintf(tmp, "port=%s\n", evhttp_find_header(&params, "port"));
+    if (mystrlen(evhttp_find_header(&params, "port")) != 0 &&
+            mystrlen(evhttp_find_header(&params, "port")) <= 10)
+    {
+        //		memcpy(reg_param->type,evhttp_find_header(&params, "type"),strlen(evhttp_find_header(&params, "type")));
+        strncpy(reg_param->port, evhttp_find_header(&params, "port"), strlen(evhttp_find_header(&params, "port")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+    sprintf(tmp, "isp=%s\n", evhttp_find_header(&params, "isp"));
+    if (mystrlen(evhttp_find_header(&params, "isp")) != 0 &&
+            mystrlen(evhttp_find_header(&params, "isp")) <= 6)
+    {
+        //		memcpy(reg_param->isp,evhttp_find_header(&params, "isp"),strlen(evhttp_find_header(&params, "isp")));
+        strncpy(reg_param->isp,evhttp_find_header(&params, "isp"),strlen(evhttp_find_header(&params, "isp")));
+    }
+    else
+    {
+        goto err;
+    }
+    strcat(output, tmp);
+
+#if 0
+    //获取POST方法的数据
+    //目前只需提供get方法
+    char *post_data = (char *) EVBUFFER_DATA(req->input_buffer);
+    sprintf(tmp, "post_data=%s\n", post_data);
+    strcat(output, tmp);
+#endif
+    int errcode = register_check(reg_param);
+    switch (errcode)
+    {
+        case 0:
+            //HTTP header
+            evhttp_add_header(req->output_headers, "Server", "voole_dns");
+            evhttp_add_header(req->output_headers, "Content-Type", "text/plain; charset=UTF-8");
+            evhttp_add_header(req->output_headers, "Connection", "close");
+            //输出的内容
+            buf = evbuffer_new();
+            evbuffer_add_printf(buf, "dns  register success !\n%s\n", output);
+            evhttp_send_reply(req, HTTP_OK, "OK", buf);
+            evbuffer_free(buf);
+            //  myfree(reg_param->ip) ;
+            //  myfree(reg_param->dom);
+            //  myfree(reg_param->type);
+            //  myfree(reg_param->isp);
+            //  myfree(reg_param->url);
+            myfree(reg_param);
+            break;
+    }
+    return ;
+
+illegal:
+    evhttp_add_header(req->output_headers, "Server", "voole_dns");
+    evhttp_add_header(req->output_headers, "Content-Type", "text/plain; charset=UTF-8");
+    evhttp_add_header(req->output_headers, "Connection", "close");
+    buf = evbuffer_new();
+    evbuffer_add_printf(buf, "dns  register url is illegal !!(\reg) !\n%s\n", output);
+    evhttp_send_reply(req, HTTP_OK, "OK", buf);
+    evbuffer_free(buf);
+    return;
+
+err:
+    PRINT("--------ip=%s\n",reg_param->ip);
+    PRINT("--------dom=%s\n",reg_param->dom);
+    PRINT("--------type=%s\n",reg_param->type);
+    PRINT("--------isp=%s\n",reg_param->isp);
+    PRINT("--------url=%s\n",reg_param->url);
+    //  myfree(reg_param->ip) ;
+    //    myfree(reg_param->dom);
+    //    myfree(reg_param->type);
+    //    myfree(reg_param->isp);
+    //    myfree(reg_param->url);
+    myfree((void *)reg_param);
+    evhttp_add_header(req->output_headers, "Server", "voole_dns");
+    evhttp_add_header(req->output_headers, "Content-Type", "text/plain; charset=UTF-8");
+    evhttp_add_header(req->output_headers, "Connection", "close");
+    buf = evbuffer_new();
+    evbuffer_add_printf(buf, "dns  register failured !\n%s\n", output);
+    evhttp_send_reply(req, HTTP_OK, "OK", buf);
+    evbuffer_free(buf);
+    return;
+}
+    void 
+register_dispatch(void *udata)
+{
+    event_base_dispatch(regbase);
+}
+    int
+register_init(content_t *pdata )
+{    
+    uint16_t httpport = pdata->pconf->httpport;
+    if(httpport == 0)
+    {
+        return ERR;
+    }
+    char *httpd_option_listen = "0.0.0.0";
+    int httpd_option_timeout = 120; //in seconds
+
+    pthread_mutex_init(&type_lock, 0);
+    pthread_mutex_init(&send_lock, 0);
+    regbase = event_base_new();
+    if (!regbase) {
+        fprintf(stderr, "creating event_base failed. Exiting.\n");
+        return ERR;
+    }
+
+    struct evhttp *httpd = NULL;
+    httpd = evhttp_new(regbase);	
+
+    evhttp_bind_socket(httpd, httpd_option_listen, httpport);
+
+    //指定generic callback
+    evhttp_set_gencb(httpd, httpd_handler_dispatch, (void *)pdata);
+    //	evhttp_set_gencb(httpd, httpd_handler, (void *)pdata);
+    //也可以为特定的URI指定callback
+    //evhttp_set_cb(httpd, "/", specific_handler, NULL);
+
+    threads_dispatch(((content_t *)pdata)->pools, register_dispatch, (void *)pdata, 0);
+
+    //	evhttp_free(httpd);
+
+    return SUC;
+}

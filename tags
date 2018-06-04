@@ -1,0 +1,718 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDNODE	./engine/register.c	43;"	d	file:
+ADD_NODE	./engine/register.c	/^    ADD_NODE,$/;"	e	enum:__anon22	file:
+AREACODELEN	./engine/store.h	22;"	d
+ASR	./utils/arch.h	30;"	d
+ATASR	./utils/arch.h	36;"	d
+ATASR	./utils/tmp/arch.h	51;"	d
+ATLOG	./utils/arch.h	37;"	d
+ATLOG	./utils/tmp/arch.h	52;"	d
+BLOCKSIZE	./vind.h	26;"	d
+BUFFER_SIZE	./engine/probe.c	28;"	d	file:
+BUSINESS_name	./engine/register.c	/^char	BUSINESS_name[64] = {0};$/;"	v
+CMAKE_BINARY_DIR	./build/Makefile	/^CMAKE_BINARY_DIR = \/mnt1\/szg\/cdn\/vind7\/vpgslb\/build$/;"	m
+CMAKE_COMMAND	./build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_EDIT_COMMAND	./build/Makefile	/^CMAKE_EDIT_COMMAND = \/usr\/bin\/ccmake$/;"	m
+CMAKE_SOURCE_DIR	./build/Makefile	/^CMAKE_SOURCE_DIR = \/mnt1\/szg\/cdn\/vind7\/vpgslb$/;"	m
+CMDLEN	./engine/obj.h	20;"	d
+CMD_LOGIN_DNS_REQ	./vind.h	49;"	d
+CMD_LOGIN_DNS_RES	./vind.h	50;"	d
+CMD_REPORT_DNS_REQ	./vind.h	51;"	d
+CMD_REPORT_DNS_RES	./vind.h	52;"	d
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	31;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	42;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	68;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	39;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	47;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+CTOI	./vind.h	55;"	d
+DELBUSINESS	./engine/register.c	49;"	d	file:
+DELDOMAIN	./engine/register.c	47;"	d	file:
+DELNODE	./engine/register.c	48;"	d	file:
+DEL_BUSINESS	./engine/register.c	/^    DEL_BUSINESS,$/;"	e	enum:__anon22	file:
+DEL_DOMAIN	./engine/register.c	/^    DEL_DOMAIN,$/;"	e	enum:__anon22	file:
+DEL_NODE	./engine/register.c	/^    DEL_NODE,$/;"	e	enum:__anon22	file:
+ERR	./engine/register.c	38;"	d	file:
+FIDSIZE	./vind.h	24;"	d
+FLAG_ACTIVE	./vind.h	7;"	d
+FLUSHDB	./engine/register.c	50;"	d	file:
+FLUSH_DB	./engine/register.c	/^    FLUSH_DB$/;"	e	enum:__anon22	file:
+HTTP_GET	./engine/probe.c	29;"	d	file:
+ID_VOID_MAIN	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+INT2PTR	./vind.h	42;"	d
+IPLEN	./engine/obj.h	25;"	d
+LICENSESIZE	./vind.h	25;"	d
+LOG	./utils/arch.h	26;"	d
+LOG	./utils/tmp/arch.h	25;"	d
+LOGD	./utils/arch.h	56;"	d
+LOGE	./utils/arch.h	65;"	d
+LOGF	./utils/arch.h	68;"	d
+LOGI	./utils/arch.h	59;"	d
+LOGN	./utils/arch.h	71;"	d
+LOGW	./utils/arch.h	62;"	d
+LOG_DEBUG	./utils/arch.h	50;"	d
+LOG_DEBUG	./utils/tmp/arch.h	21;"	d
+LOG_EMERG	./utils/arch.h	52;"	d
+LOG_EMERG	./utils/tmp/arch.h	23;"	d
+LOG_ERR	./utils/arch.h	49;"	d
+LOG_ERR	./utils/tmp/arch.h	20;"	d
+LOG_INFO	./utils/arch.h	46;"	d
+LOG_INFO	./utils/tmp/arch.h	17;"	d
+LOG_LEVEL	./utils/arch.c	/^int LOG_LEVEL = 3;$/;"	v
+LOG_LEVEL_DEBUG	./utils/arch.h	39;"	d
+LOG_LEVEL_ERROR	./utils/arch.h	42;"	d
+LOG_LEVEL_FATAL	./utils/arch.h	43;"	d
+LOG_LEVEL_INFO	./utils/arch.h	40;"	d
+LOG_LEVEL_MAX	./utils/arch.h	24;"	d
+LOG_LEVEL_NOTICE	./utils/arch.h	44;"	d
+LOG_LEVEL_WARN	./utils/arch.h	41;"	d
+LOG_NOTICE	./utils/arch.h	51;"	d
+LOG_NOTICE	./utils/tmp/arch.h	22;"	d
+LOG_TRACE	./utils/arch.h	48;"	d
+LOG_TRACE	./utils/tmp/arch.h	19;"	d
+LOG_WARNING	./utils/arch.h	47;"	d
+LOG_WARNING	./utils/tmp/arch.h	18;"	d
+MAX	./vind.h	36;"	d
+MAXFILEDESC	./vind.h	45;"	d
+MAXMSGSIZE	./vind.h	27;"	d
+MAX_QUEUE	./include/threads.h	17;"	d
+MAX_THREADS	./include/threads.h	16;"	d
+MIN	./vind.h	39;"	d
+MYNAME	./vind.c	38;"	d	file:
+NAME_KEY_LEN	./engine/obj.h	23;"	d
+NIDSIZE	./vind.h	23;"	d
+NODE_STATUS_INSER	./engine/store.h	18;"	d
+NODE_STATUS_INUSE	./engine/store.h	15;"	d
+NODE_STATUS_UNSER	./engine/store.h	19;"	d
+NODE_STATUS_UNUSE	./engine/store.h	16;"	d
+NS_ACTIVE	./vind.h	32;"	d
+NS_CONNECTING	./vind.h	29;"	d
+NS_DISUSE	./vind.h	33;"	d
+NS_INVALID	./vind.h	31;"	d
+NS_NORMAL	./vind.h	30;"	d
+NT_CLIENT	./vind.h	12;"	d
+NT_DNSSERVER	./vind.h	18;"	d
+NT_INETSRV	./vind.h	11;"	d
+NT_PROXY	./vind.h	13;"	d
+NT_SHARE	./vind.h	15;"	d
+NT_TCPSERVER	./vind.h	19;"	d
+NT_UNIXSRV	./vind.h	10;"	d
+NT_VOD	./vind.h	14;"	d
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	95;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	86;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+PNODE_INIT	./engine/probe.c	20;"	d	file:
+PNODE_PROBED	./engine/probe.c	22;"	d	file:
+PNODE_PROBEER	./engine/probe.c	23;"	d	file:
+PNODE_PROBING	./engine/probe.c	21;"	d	file:
+PREFIXMAXLEN	./utils/arch.h	23;"	d
+PREFIXMAXLEN	./utils/tmp/arch.h	15;"	d
+PRINT	./utils/arch.h	73;"	d
+PRINT	./utils/tmp/arch.h	36;"	d
+PROBE_TCP	./engine/probe.c	25;"	d	file:
+PROBE_WEB	./engine/probe.c	26;"	d	file:
+PTR2INT	./vind.h	43;"	d
+REGBUSINESS	./engine/register.c	41;"	d	file:
+REGDOMAIN	./engine/register.c	42;"	d	file:
+REG_BUSINESS	./engine/register.c	/^    REG_BUSINESS = 1,$/;"	e	enum:__anon22	file:
+REG_DOMAIN	./engine/register.c	/^    REG_DOMAIN,$/;"	e	enum:__anon22	file:
+RESOURCE	./version.h	6;"	d
+RES_NUM	./engine/obj.h	22;"	d
+RM	./build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+SCHBUSINESS	./engine/register.c	45;"	d	file:
+SCHDOMAIN	./engine/register.c	44;"	d	file:
+SCHNODE	./engine/register.c	46;"	d	file:
+SCH_BUSINESS	./engine/register.c	/^    SCH_BUSINESS,$/;"	e	enum:__anon22	file:
+SCH_DOMAIN	./engine/register.c	/^    SCH_DOMAIN,$/;"	e	enum:__anon22	file:
+SCH_NODE	./engine/register.c	/^    SCH_NODE,$/;"	e	enum:__anon22	file:
+SHELL	./build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SUC	./engine/register.c	39;"	d	file:
+SUFFIXES	./build/Makefile	/^SUFFIXES =$/;"	m
+TIMEOUT	./engine/store.h	21;"	d
+UCMD	./engine/register.c	/^}UCMD;$/;"	t	typeref:enum:__anon22	file:
+URLMAXLEN	./utils/arch.h	22;"	d
+URLMAXLEN	./utils/tmp/arch.h	14;"	d
+_ARCH_H_	./utils/arch.h	10;"	d
+_CLEAN	./utils/tmp/arch.h	31;"	d
+_LOG_H_	./utils/tmp/arch.h	10;"	d
+_MSG_H	./msg.h	3;"	d
+_SVN_REVISION_H_	./version.h	4;"	d
+_THREADS_H_	./include/threads.h	2;"	d
+_VIND_H_	./vind.h	2;"	d
+__PROBE_H__	./engine/probe.h	9;"	d
+__REDIS_H__	./db/redis.h	9;"	d
+__RPPLY_H__	./engine/reply.h	10;"	d
+__STORE_H__	./engine/store.h	9;"	d
+__obj_h	./engine/obj.h	9;"	d
+_dns_pdu	./msg.h	/^    struct _dns_pdu {$/;"	s	struct:dnsmsg_s
+access	./engine/obj.h	/^    caccess_t       *access;$/;"	m	struct:__anon20
+access_lock	./engine/obj.h	/^    pthread_mutex_t  access_lock;$/;"	m	struct:__anon11
+accesses	./engine/obj.h	/^    gdsl_hash_t      accesses;$/;"	m	struct:__anon19
+action_eventcb	./engine/probe.c	/^static void action_eventcb(struct bufferevent *bev, short events, void *user_data)$/;"	f	file:
+add_queue	./engine/probe.c	/^    gdsl_list_t      add_queue;$/;"	m	struct:__anon26	file:
+addr	./engine/obj.h	/^    uint8_t          addr[16];$/;"	m	struct:__anon20
+addrs	./engine/reply.h	/^    uint32_t       addrs[8];$/;"	m	struct:__anon23
+am	./utils/arch.c	/^static archivemod_t *am = NULL;$/;"	v	file:
+am	./utils/tmp/arch.c	/^static archivemod_t *am = NULL;$/;"	v	file:
+apply_create	./engine/reply.c	/^apply_create(content_t *cn, const char *name, uint32_t reqip)$/;"	f
+apply_free	./engine/reply.c	/^apply_free(apply_t *ap)$/;"	f
+apply_t	./engine/reply.h	/^} apply_t;$/;"	t	typeref:struct:__anon23
+archive_debug	./utils/tmp/arch.c	/^int archive_debug()$/;"	f
+archive_destroy	./utils/arch.c	/^void archive_destroy()$/;"	f
+archive_destroy	./utils/tmp/arch.c	/^void archive_destroy()$/;"	f
+archive_init	./utils/arch.c	/^int archive_init(const char *path, const char *prefix, int srv, cbsink_t cb, void *arg)$/;"	f
+archive_init	./utils/tmp/arch.c	/^int archive_init(const char * path, const char *prefix, int srv, cbsink_t cb, void *arg)$/;"	f
+archive_of_asr	./utils/arch.c	/^void archive_of_asr(uint32_t app, const char *format, ...)$/;"	f
+archive_of_log	./utils/arch.c	/^void archive_of_log(uint32_t facility, char *format, ...)$/;"	f
+archive_of_log	./utils/tmp/arch.c	/^void archive_of_log (int level, char* format, ...)$/;"	f
+archive_of_log_o	./utils/arch.c	/^void archive_of_log_o(char* facility, char* format, ...)$/;"	f
+archive_of_thread	./utils/arch.c	/^void archive_of_thread(void *param)$/;"	f
+archive_print	./utils/arch.c	/^void archive_print()$/;"	f
+archive_update	./utils/arch.c	/^void archive_update()$/;"	f
+archivemod_t	./utils/arch.c	/^} archivemod_t;$/;"	t	typeref:struct:__anon7	file:
+archivemod_t	./utils/tmp/arch.c	/^} archivemod_t;$/;"	t	typeref:struct:__anon5	file:
+area	./engine/register.c	/^    char 	area[8];   \/\/- use for business type$/;"	m	struct:register_param	file:
+area_route	./engine/route.c	/^gdsl_list_t area_route(const char *areacode,gdsl_list_t node_list,const char *isp,uint32_t count,gdsl_list_t return_list)$/;"	f
+arg	./utils/arch.c	/^    void *arg;$/;"	m	struct:__anon7	file:
+arg	./utils/tmp/arch.c	/^    void *arg;$/;"	m	struct:__anon5	file:
+asrfd	./utils/arch.c	/^    FILE *asrfd;             \/* business fd *\/$/;"	m	struct:__anon7	file:
+asrfd	./utils/tmp/arch.c	/^    FILE *asrfd;$/;"	m	struct:__anon5	file:
+banlance	./engine/store.c	/^uint32_t banlance(void *udata, uint32_t *ttl, uint32_t *ip)$/;"	f
+banlance_adjust	./engine/store.c	/^static uint32_t banlance_adjust(store_t *udata, uint32_t *ip, uint32_t *ttl)$/;"	f	file:
+besent	./engine/obj.h	/^    int              besent;$/;"	m	struct:__anon11
+bev	./engine/probe.c	/^    struct bufferevent *bev;$/;"	m	struct:__anon24	typeref:struct:__anon24::bufferevent	file:
+bev	./engine/probe.c	/^    struct bufferevent *bev;$/;"	m	struct:__anon25	typeref:struct:__anon25::bufferevent	file:
+body	./msg.h	/^        } body;$/;"	m	struct:dnsmsg_s::_dns_pdu	typeref:union:dnsmsg_s::_dns_pdu::__anon1
+btype	./engine/obj.h	/^    uint32_t      btype;$/;"	m	struct:__anon14
+btype	./engine/obj.h	/^    uint32_t      btype;$/;"	m	struct:__anon15
+btype	./engine/obj.h	/^    uint32_t      btype;$/;"	m	struct:__anon17
+btype	./engine/register.c	/^    char 	btype[51];   \/\/- use for business type$/;"	m	struct:register_param	file:
+bucode	./engine/register.c	/^int bucode = 0;$/;"	v
+buffer	./utils/arch.c	/^    char buffer[2][1000000]; \/* 0-log, 1-asr *\/$/;"	m	struct:__anon7	file:
+businessnum	./engine/register.c	/^    char    businessnum[8];$/;"	m	struct:register_param	file:
+ca	./engine/obj.h	/^    void            *ca;$/;"	m	struct:__anon9
+caccess_t	./engine/obj.h	/^} caccess_t;$/;"	t	typeref:struct:__anon11
+cb	./utils/arch.c	/^    cbsink_t cb;$/;"	m	struct:__anon7	file:
+cb	./utils/tmp/arch.c	/^    cbsink_t cb;$/;"	m	struct:__anon5	file:
+cbconnect	./engine/probe.c	/^static int cbconnect (struct bufferevent *bev, probe_node_t* pnode, int fd , int probe_type)$/;"	f	file:
+cbsink_t	./utils/arch.h	/^typedef int(*cbsink_t)(void *arg, const char* level, const char* message);$/;"	t
+cbsink_t	./utils/tmp/arch.h	/^typedef int(*cbsink_t)(void *arg, const char* level, const char* message);$/;"	t
+cgroup_create	./engine/access.c	/^cgroup_create (int group, int immediate)$/;"	f
+cgroup_destroy	./engine/access.c	/^cgroup_destroy (cgroup_t *cg)$/;"	f
+cgroup_t	./engine/obj.h	/^} cgroup_t;$/;"	t	typeref:struct:__anon21
+check_module	./utils/arch.c	/^int check_module(const char *mode)$/;"	f
+check_program	./vind.c	/^void check_program(const char *prom)$/;"	f
+childs	./engine/obj.h	/^    gdsl_list_t      childs;$/;"	m	struct:__anon21
+chose_conn	./db/redis.c	/^chose_conn()$/;"	f
+chose_index	./db/redis.c	/^chose_index()$/;"	f
+cmd	./engine/register.c	/^    UCMD    cmd;$/;"	m	struct:register_param	file:
+cmd	./msg.h	/^        uint32_t cmd;  $/;"	m	struct:dnsmsg_s::_dns_pdu
+cn	./vind.c	/^content_t *cn = NULL;$/;"	v
+cname	./engine/register.c	/^    char    cname[128];$/;"	m	struct:register_param	file:
+cnlock	./engine/obj.h	/^    pthread_mutex_t  cnlock;$/;"	m	struct:__anon19
+cnode_create	./engine/access.c	/^cnode_create(const char *nid, uint32_t uip, int type)$/;"	f
+cnode_destroy	./engine/access.c	/^cnode_destroy(inode_t *nd)$/;"	f
+code	./engine/obj.h	/^        char        *code;$/;"	m	struct:__anon18
+code_isp_t	./engine/obj.h	/^} code_isp_t;$/;"	t	typeref:struct:__anon18
+colors	./utils/tmp/arch.c	/^struct level_s colors[7] =$/;"	v	typeref:struct:level_s
+compHash	./engine/core.c	/^ static int compHash (int *pk, int k)$/;"	f	file:
+compHash2	./engine/store.c	/^static int compHash2 (char *pk, char *k)$/;"	f	file:
+cond	./utils/tmp/arch.c	/^    pthread_cond_t cond;$/;"	m	struct:__anon5	file:
+config_file	./vind.c	/^char *config_file = "vind.cfg";$/;"	v
+config_t	./engine/obj.h	/^} config_t;$/;"	t	typeref:struct:__anon12
+content_init	./engine/core.c	/^content_init(content_t *cn, const char *name, const char *config)$/;"	f
+content_t	./engine/obj.h	/^} content_t;$/;"	t	typeref:struct:__anon19
+controller	./engine/store.c	/^static void controller(void *udata) $/;"	f	file:
+core	./engine/obj.h	/^    void            *core;$/;"	m	struct:__anon11
+core_cmd_login	./engine/core.c	/^core_cmd_login(content_t *cn, caccess_t *ca, dnsmsg_t *req)$/;"	f
+core_cmd_report	./engine/core.c	/^core_cmd_report(content_t *cn, caccess_t *ca, dnsmsg_t *req)$/;"	f
+core_dispatch	./engine/core.c	/^core_dispatch(content_t *cn, caccess_t *ca)$/;"	f
+count	./engine/obj.h	/^    int              count;$/;"	m	struct:__anon21
+count	./engine/obj.h	/^    int           count;$/;"	m	struct:__anon17
+count	./engine/obj.h	/^    uint32_t       count;$/;"	m	struct:store_s
+count	./engine/reply.h	/^    int            count;$/;"	m	struct:__anon23
+cpus	./engine/obj.h	/^    uint16_t         cpus;$/;"	m	struct:__anon20
+cpus	./engine/obj.h	/^    uint32_t      cpus;$/;"	m	struct:__anon14
+cpus	./msg.h	/^                uint16_t  cpus;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+cputilization	./engine/obj.h	/^    uint16_t      cputilization;$/;"	m	struct:__anon13
+createFile	./utils/arch.c	/^static int createFile(time_t t)$/;"	f	file:
+createFile	./utils/tmp/arch.c	/^static int createFile (time_t t)$/;"	f	file:
+create_ngroup	./engine/store.c	/^ngroup_t *create_ngroup(store_t *pstore)$/;"	f
+create_probeaction	./engine/probe.c	/^static void create_probeaction(probe_node_t *pnode)\/\/, short port, const char *ip)$/;"	f	file:
+create_resmsg	./engine/core.c	/^create_resmsg(int cmd, uint8_t status, int seq, int size)$/;"	f
+cycle	./engine/obj.h	/^    int           cycle;$/;"	m	struct:__anon13
+cycle	./engine/obj.h	/^    uint16_t      cycle;$/;"	m	struct:__anon14
+cycle	./engine/probe.c	/^    int                 cycle;$/;"	m	struct:__anon24	file:
+cycle	./engine/register.c	/^    char    cycle[8];$/;"	m	struct:register_param	file:
+datalen	./engine/obj.h	/^    int              datalen;$/;"	m	struct:__anon11
+db	./db/redis.c	/^    int                 db;$/;"	m	struct:__anon8	file:
+db	./engine/register.c	/^    char    db[4];$/;"	m	struct:register_param	file:
+debug	./utils/tmp/arch.c	/^    int debug;$/;"	m	struct:__anon5	file:
+del_char	./engine/core.c	/^del_char(char* str,char ch)$/;"	f	file:
+desc	./engine/register.c	/^    char    desc[128];$/;"	m	struct:register_param	file:
+dispatch	./vind.c	/^void dispatch(void *ca)$/;"	f
+dns_route	./engine/route.c	/^gdsl_list_t dns_route(char *areacode, uint32_t ip, char *isp, gdsl_list_t node_list, uint16_t gtype, uint32_t count, const char *domain)$/;"	f
+dnsmsg_s	./msg.h	/^typedef struct dnsmsg_s {$/;"	s
+dnsmsg_t	./msg.h	/^} dnsmsg_t;$/;"	t	typeref:struct:dnsmsg_s
+dom	./engine/register.c	/^    char 	dom[256];$/;"	m	struct:register_param	file:
+domain_tmp	./engine/obj.h	/^    char          *domain_tmp;$/;"	m	struct:__anon17
+dst	./msg.h	/^    uint8_t   dst[7];$/;"	m	struct:dnsmsg_s
+dtype	./engine/register.c	/^    char 	dtype[51]; \/\/- use for register type$/;"	m	struct:register_param	file:
+ev	./engine/obj.h	/^    void            *ev;$/;"	m	struct:__anon9
+evbase	./engine/obj.h	/^    void            *evbase;$/;"	m	struct:__anon10
+evbase	./engine/probe.c	/^    struct event_base  *evbase; $/;"	m	struct:__anon24	typeref:struct:__anon24::event_base	file:
+evbase	./engine/probe.c	/^    void            *evbase;$/;"	m	struct:__anon26	file:
+evdns_server_callback	./vind.c	/^static void evdns_server_callback(struct evdns_server_request *req, void *data)$/;"	f	file:
+evrecv	./engine/probe.c	/^    void            *evrecv;$/;"	m	struct:__anon26	file:
+evsend	./engine/probe.c	/^    void            *evsend;$/;"	m	struct:__anon26	file:
+evtimer	./engine/probe.c	/^    struct event*    evtimer;$/;"	m	struct:__anon26	typeref:struct:__anon26::event	file:
+exit_flag	./utils/arch.c	/^    int exit_flag; $/;"	m	struct:__anon7	file:
+fd	./engine/obj.h	/^    int              fd;$/;"	m	struct:__anon11
+fen_status	./engine/obj.h	/^    int            fen_status;$/;"	m	struct:store_s
+fentity	./engine/obj.h	/^    gdsl_list_t    fentity;$/;"	m	struct:store_s
+flag	./engine/obj.h	/^    int              flag;$/;"	m	struct:__anon11
+flag	./engine/obj.h	/^    uint32_t         flag;$/;"	m	struct:__anon10
+flush_file	./utils/tmp/arch.c	/^static void flush_file(void *arg)$/;"	f	file:
+forward	./msg.h	/^    int       forward;$/;"	m	struct:dnsmsg_s
+free_content	./engine/core.c	/^free_content(content_t *cn)$/;"	f
+free_msg	./engine/msg.c	/^free_msg(dnsmsg_t *msg)$/;"	f
+free_probe	./engine/probe.c	/^void free_probe(void *udata)$/;"	f
+free_store	./engine/store.c	/^void free_store(void *udata)$/;"	f
+generic_handler	./vind.c	/^void generic_handler(struct evhttp_request *req, void *arg)$/;"	f
+get_areacode	./engine/store.c	/^int get_areacode(char *areacode)$/;"	f
+get_business	./engine/register.c	/^get_business(int i,const char *str,void *phint)$/;"	f	file:
+get_dns_null	./engine/register.c	/^get_dns_null(int i, const char *str, void *phint)$/;"	f	file:
+get_dns_type	./engine/register.c	/^get_dns_type(int i, const char * str, void *phint)$/;"	f	file:
+get_dns_type_max_key	./engine/register.c	/^get_dns_type_max_key(int i,const char *str,void *phint)$/;"	f	file:
+get_dns_type_max_score	./engine/register.c	/^get_dns_type_max_score(int i,const char *str,void *phint)$/;"	f	file:
+get_dns_type_score	./engine/register.c	/^get_dns_type_score(int i,const char *str,void *phint)$/;"	f	file:
+get_domain	./engine/route.c	/^int get_domain(char *domain, char *url, int len)$/;"	f
+get_max_bcode	./engine/register.c	/^get_max_bcode(int i,const char *str,void *phint)$/;"	f	file:
+get_sessionid	./vind.c	/^int get_sessionid()$/;"	f
+getcurtime_ms	./utils/arch.c	/^int64_t getcurtime_ms()$/;"	f
+group	./engine/obj.h	/^    int              group;$/;"	m	struct:__anon21
+group_list_search	./engine/store.c	/^static int group_list_search(void * E, void * str)$/;"	f	file:
+group_t_free	./engine/store.c	/^static void group_t_free(void *e)$/;"	f	file:
+group_tmp	./engine/obj.h	/^    ngroup_t*      group_tmp;     $/;"	m	struct:store_s
+groups	./engine/obj.h	/^    gdsl_hash_t      groups;$/;"	m	struct:__anon19
+gtype	./engine/obj.h	/^    uint32_t    gtype;$/;"	m	struct:__anon16
+gtype	./engine/register.c	/^    char 	gtype[51]; \/\/- use for register type$/;"	m	struct:register_param	file:
+handler	./vind.c	/^void handler(int signo) $/;"	f
+hashHash	./engine/core.c	/^ static int hashHash(int k)$/;"	f	file:
+hashHash2	./engine/store.c	/^static int hashHash2(int k)$/;"	f	file:
+host	./db/redis.c	/^    char               *host;$/;"	m	struct:__anon8	file:
+host	./engine/obj.h	/^    char             host[16];$/;"	m	struct:__anon11
+host	./engine/probe.c	/^    char               *host;$/;"	m	struct:__anon24	file:
+http_errcb	./engine/probe.c	/^static void http_errcb(struct bufferevent *bev , short what, void *pnodetmp)$/;"	f	file:
+http_readcb	./engine/probe.c	/^static void http_readcb(struct bufferevent *bev, void *pnodetmp)  $/;"	f	file:
+http_writecb	./engine/probe.c	/^static void http_writecb(struct bufferevent *bev, void *arg)    $/;"	f	file:
+httpd_handler	./engine/register.c	/^httpd_handler( void *reqtmp) $/;"	f
+httpd_handler_dispatch	./engine/register.c	/^httpd_handler_dispatch(struct evhttp_request* req ,void* pdata)$/;"	f
+httpport	./engine/obj.h	/^    uint16_t    httpport;$/;"	m	struct:__anon12
+id	./engine/obj.h	/^    char          id[9];$/;"	m	struct:__anon13
+id	./engine/obj.h	/^    uint8_t       id[NIDSIZE];$/;"	m	struct:__anon14
+id	./engine/obj.h	/^    uint8_t     id[9];$/;"	m	struct:__anon12
+ikeyHash	./engine/core.c	/^static void* ikeyHash (cgroup_t *cg)$/;"	f	file:
+immediate	./engine/obj.h	/^    int              immediate;$/;"	m	struct:__anon21
+index	./utils/arch.c	/^    int  index;$/;"	m	struct:__anon6	file:
+info	./utils/tmp/arch.c	/^    char   *info;$/;"	m	struct:level_s	file:
+info_compiler	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+initialize_store	./engine/store.c	/^static void initialize_store(store_t *udata)$/;"	f	file:
+inode_t	./engine/obj.h	/^} inode_t;$/;"	t	typeref:struct:__anon20
+interaction	./engine/obj.h	/^    time_t           interaction;$/;"	m	struct:__anon11
+inuse	./engine/obj.h	/^    int           inuse;$/;"	m	struct:__anon17
+inuse	./engine/obj.h	/^    uint32_t       inuse;$/;"	m	struct:__anon14
+inuse	./engine/obj.h	/^    uint8_t          inuse;$/;"	m	struct:__anon20
+inuse	./engine/obj.h	/^    uint8_t       inuse;$/;"	m	struct:__anon13
+inuse	./engine/obj.h	/^    uint8_t       inuse;$/;"	m	struct:__anon15
+inuse	./engine/register.c	/^    char    inuse[4];$/;"	m	struct:register_param	file:
+inuse	./utils/arch.c	/^    int inuse;$/;"	m	struct:module_s	file:
+ip	./engine/obj.h	/^    char          *ip;$/;"	m	struct:__anon14
+ip	./engine/obj.h	/^    char          ip[16];$/;"	m	struct:__anon13
+ip	./engine/obj.h	/^    uint32_t         ip;$/;"	m	struct:__anon20
+ip	./engine/register.c	/^    char	ip[16];$/;"	m	struct:register_param	file:
+ip	./msg.h	/^                uint32_t  ip;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+ip_code	./engine/obj.h	/^    char          *ip_code; $/;"	m	struct:__anon14
+isp	./engine/obj.h	/^        char        *isp;$/;"	m	struct:__anon18
+isp	./engine/obj.h	/^    char          *isp;$/;"	m	struct:__anon14
+isp	./engine/obj.h	/^    int              isp;$/;"	m	struct:__anon11
+isp	./engine/register.c	/^    char    isp[4];$/;"	m	struct:register_param	file:
+isp	./msg.h	/^                uint16_t  isp;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+keyHash	./engine/core.c	/^static void* keyHash (caccess_t *ca)$/;"	f	file:
+keyHash2	./engine/store.c	/^static char * keyHash2 (ngroup_t *ng)$/;"	f	file:
+keypad	./engine/obj.h	/^    int        keypad;$/;"	m	struct:store_s
+kit	./utils/logo.c	/^kit()$/;"	f
+launch_probe	./engine/probe.c	/^static void launch_probe(void *pdata)$/;"	f	file:
+len	./msg.h	/^        uint32_t len;  $/;"	m	struct:dnsmsg_s::_dns_pdu
+level	./utils/arch.c	/^level_t level[] = {{0, "-"}, {1, "D"} ,{2, "I"},{3, "W"},{4, "E"},{5, "F"},{6, "N"}};$/;"	v
+level	./utils/tmp/arch.c	/^    int     level;$/;"	m	struct:level_s	file:
+level_s	./utils/tmp/arch.c	/^struct level_s {$/;"	s	file:
+level_t	./utils/arch.c	/^} level_t;$/;"	t	typeref:struct:__anon6	file:
+levels	./utils/tmp/arch.c	/^struct level_s levels[7] = $/;"	v	typeref:struct:level_s
+links	./engine/obj.h	/^    uint32_t         links;$/;"	m	struct:__anon20
+links	./engine/obj.h	/^    uint32_t      links;$/;"	m	struct:__anon14
+links	./msg.h	/^                uint32_t  links;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+listen	./engine/obj.h	/^    int         listen;$/;"	m	struct:__anon12
+lock	./utils/arch.c	/^    pthread_mutex_t lock;$/;"	m	struct:__anon7	file:
+lock	./utils/tmp/arch.c	/^    pthread_mutex_t lock;$/;"	m	struct:__anon5	file:
+log_filter	./utils/arch.c	/^void log_filter(const char *module, uint32_t ilevel, const char *func, const char *format,...)$/;"	f
+logfd	./utils/arch.c	/^    FILE *logfd;             \/* system fd *\/$/;"	m	struct:__anon7	file:
+logfd	./utils/tmp/arch.c	/^    FILE *logfd;   \/* system fd *\/$/;"	m	struct:__anon5	file:
+logic	./engine/obj.h	/^    void            *logic;$/;"	m	struct:__anon19
+logo	./utils/logo.c	/^logo()$/;"	f
+magic	./engine/obj.h	/^    int              magic;$/;"	m	struct:__anon11
+main	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* argv[])$/;"	f
+main	./build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	./build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	./utils/arch.c	/^int main(int argc, char *argv[])$/;"	f
+main	./vind.c	/^int main(int argc, char **argv)$/;"	f
+mask	./msg.h	/^                uint32_t  mask;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+mask	./utils/arch.c	/^    int mask;$/;"	m	struct:__anon7	file:
+mask	./utils/tmp/arch.c	/^    int mask;$/;"	m	struct:__anon5	file:
+match_name	./engine/store.c	/^char *match_name(void *udata, const char *name)$/;"	f
+max_score	./engine/register.c	/^char    max_score[10] = {0};$/;"	v
+memorylization	./engine/obj.h	/^    uint16_t      memorylization;$/;"	m	struct:__anon13
+memorys	./engine/obj.h	/^    uint16_t         memorys;$/;"	m	struct:__anon20
+memorys	./engine/obj.h	/^    uint32_t      memorys;$/;"	m	struct:__anon14
+memorys	./msg.h	/^                uint16_t  memorys;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+mod_route	./engine/route.c	/^gdsl_list_t mod_route(gdsl_list_t node_list, uint32_t ip ,uint16_t gtype,gdsl_list_t return_list)$/;"	f
+module_s	./utils/arch.c	/^typedef struct module_s {$/;"	s	file:
+module_t	./utils/arch.c	/^}module_t;$/;"	t	typeref:struct:module_s	file:
+modules	./utils/arch.c	/^module_t modules[] = {$/;"	v
+mutex	./engine/probe.c	/^    pthread_mutex_t  mutex;$/;"	m	struct:__anon26	file:
+myfree	./engine/register.c	/^myfree(void  *d)$/;"	f
+mystrlen	./engine/register.c	/^mystrlen(const char* str)$/;"	f
+name	./engine/obj.h	/^    char         *name;$/;"	m	struct:__anon15
+name	./engine/register.c	/^    char    name[128];$/;"	m	struct:register_param	file:
+name	./utils/arch.c	/^    char *name;$/;"	m	struct:__anon6	file:
+name	./utils/arch.c	/^    const char *name;$/;"	m	struct:module_s	file:
+name_key	./engine/obj.h	/^    char          *name_key;$/;"	m	struct:__anon17
+name_keys	./engine/obj.h	/^    gdsl_list_t   name_keys;$/;"	m	struct:__anon17
+name_t	./engine/obj.h	/^} name_t;$/;"	t	typeref:struct:__anon15
+name_t_free	./engine/store.c	/^static void name_t_free(void *e)$/;"	f	file:
+name_tmp	./engine/obj.h	/^    name_t        *name_tmp;$/;"	m	struct:__anon17
+name_type	./engine/obj.h	/^    uint32_t      name_type;$/;"	m	struct:__anon15
+nameport	./engine/obj.h	/^	uint16_t    nameport;$/;"	m	struct:__anon12
+names	./engine/obj.h	/^    gdsl_list_t   names;$/;"	m	struct:__anon17
+need_module	./utils/arch.c	/^int need_module = 0;$/;"	v
+neighbor_node_list	./engine/route.c	/^static int neighbor_node_list(node_t *node,const char *isp,const char *code_provice,gdsl_list_t list,uint32_t *count)$/;"	f	file:
+nev	./engine/probe.c	/^    struct event       *nev;$/;"	m	struct:__anon24	typeref:struct:__anon24::event	file:
+new_caccess	./engine/access.c	/^new_caccess(void *cn, int fd, const char *host, int port, int type)$/;"	f
+new_config	./engine/core.c	/^new_config(const char *file)$/;"	f	file:
+new_msg	./engine/msg.c	/^new_msg(int size)$/;"	f
+new_obj	./vind.c	/^wobj_t *new_obj(worker_t *wk, void *ca)$/;"	f
+new_probe	./engine/probe.c	/^void * new_probe(void *pdata)$/;"	f
+new_redis	./db/redis.c	/^new_redis(const char* host, const int port, const char * pswd, int db) $/;"	f
+new_store	./engine/store.c	/^store_t *new_store(void *pdata)$/;"	f
+new_worker	./vind.c	/^worker_t *new_worker()$/;"	f
+ngroup_t	./engine/obj.h	/^} ngroup_t;$/;"	t	typeref:struct:__anon17
+nid	./engine/obj.h	/^    uint8_t          nid[NIDSIZE+1];$/;"	m	struct:__anon11
+nid	./engine/obj.h	/^    uint8_t          nid[NIDSIZE+1];$/;"	m	struct:__anon20
+node	./engine/probe.c	/^    probe_node_t             *node;$/;"	m	struct:__anon25	file:
+node_keys	./engine/obj.h	/^    gdsl_list_t   node_keys;$/;"	m	struct:__anon17
+node_list	./engine/probe.c	/^    gdsl_list_t      node_list;$/;"	m	struct:__anon26	file:
+node_t	./engine/obj.h	/^} node_t;$/;"	t	typeref:struct:__anon14
+node_t_free	./engine/store.c	/^void node_t_free(void *e)$/;"	f
+node_tmp	./engine/obj.h	/^    node_t        *node_tmp;$/;"	m	struct:__anon17
+nodeid	./engine/obj.h	/^    uint8_t          nodeid[NIDSIZE+1];$/;"	m	struct:__anon19
+nodeid	./msg.h	/^                uint8_t   nodeid[8];$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+nodes	./engine/obj.h	/^    gdsl_list_t   nodes;$/;"	m	struct:__anon17
+nodetype	./engine/obj.h	/^    uint32_t          nodetype;$/;"	m	struct:__anon11
+notify_event	./engine/obj.h	/^    wobj_t          *notify_event;$/;"	m	struct:__anon10
+notify_recv	./engine/obj.h	/^    int              notify_recv;$/;"	m	struct:__anon10
+notify_send	./engine/obj.h	/^    int              notify_send;$/;"	m	struct:__anon10
+num	./engine/obj.h	/^    uint32_t    num;$/;"	m	struct:__anon16
+objlock	./engine/obj.h	/^    pthread_mutex_t  objlock;$/;"	m	struct:__anon19
+on_accept	./vind.c	/^int on_accept(int sock, short event, void* arg)$/;"	f
+on_error	./vind.c	/^int on_error(caccess_t *ca)$/;"	f
+on_read	./vind.c	/^on_read(int sock, short event, void* arg)$/;"	f
+on_signal	./vind.c	/^void on_signal(int fd, short event, void *arg)$/;"	f
+on_timer	./vind.c	/^void on_timer(int fd, short event , void *arg)$/;"	f
+on_write	./vind.c	/^int on_write(int sock, short event, void* arg)$/;"	f
+oneStep	./engine/store.c	/^static int oneStep (void *e, gdsl_location_t l, void *arg)$/;"	f	file:
+opper	./engine/register.c	/^    char    opper[128];$/;"	m	struct:register_param	file:
+opper_business	./engine/register.c	/^opper_business(char *out, register_param_t *reg_para)$/;"	f	file:
+opper_db	./engine/register.c	/^opper_db(char *out, register_param_t *reg_para)$/;"	f	file:
+opper_domain	./engine/register.c	/^opper_domain(char *out, register_param_t *reg_para)$/;"	f	file:
+opper_node	./engine/register.c	/^opper_node(char *out, register_param_t *reg_para)$/;"	f	file:
+origin	./msg.h	/^    int       origin;$/;"	m	struct:dnsmsg_s
+parse_add_node	./engine/register.c	/^parse_add_node(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_del_business	./engine/register.c	/^parse_del_business(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_del_domain	./engine/register.c	/^parse_del_domain(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_del_node	./engine/register.c	/^parse_del_node(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_flushdb	./engine/register.c	/^parse_flushdb(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_get_business	./engine/register.c	/^parse_get_business(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_get_domain	./engine/register.c	/^parse_get_domain(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_get_node	./engine/register.c	/^parse_get_node(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_register_business	./engine/register.c	/^parse_register_business(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+parse_register_domain	./engine/register.c	/^parse_register_domain(const char *uri, char *out, register_param_t *reg_param)$/;"	f
+path	./utils/arch.c	/^    char path[URLMAXLEN];$/;"	m	struct:__anon7	file:
+path	./utils/tmp/arch.c	/^    char path[URLMAXLEN];$/;"	m	struct:__anon5	file:
+pconf	./engine/obj.h	/^    config_t        *pconf; $/;"	m	struct:__anon19
+pdev	./engine/obj.h	/^    wobj_t          *pdev;$/;"	m	struct:__anon11
+pdu	./msg.h	/^    }pdu;$/;"	m	struct:dnsmsg_s	typeref:struct:dnsmsg_s::_dns_pdu
+pnode_search	./engine/probe.c	/^static probe_node_t *pnode_search(void *udata, probe_node_t *node)$/;"	f	file:
+pnode_search_cb	./engine/probe.c	/^static long int pnode_search_cb(const gdsl_element_t E, void *VALUE)$/;"	f	file:
+pools	./engine/obj.h	/^    threadpool_t    *pools; $/;"	m	struct:__anon19
+pools	./engine/obj.h	/^    threadpool_t *pools;$/;"	m	struct:store_s
+pools	./engine/probe.c	/^    threadpool_t    *pools;$/;"	m	struct:__anon26	file:
+port	./db/redis.c	/^    int                 port;$/;"	m	struct:__anon8	file:
+port	./engine/obj.h	/^    short         port;$/;"	m	struct:__anon13
+port	./engine/obj.h	/^    short         port;$/;"	m	struct:__anon14
+port	./engine/obj.h	/^    uint16_t         port;$/;"	m	struct:__anon11
+port	./engine/obj.h	/^    uint16_t         port;$/;"	m	struct:__anon20
+port	./engine/probe.c	/^    short               port;$/;"	m	struct:__anon24	file:
+port	./engine/register.c	/^    char    port[10];$/;"	m	struct:register_param	file:
+prefix	./utils/arch.c	/^    char prefix[PREFIXMAXLEN];$/;"	m	struct:__anon7	file:
+prefix	./utils/tmp/arch.c	/^    char prefix[PREFIXMAXLEN]; $/;"	m	struct:__anon5	file:
+probe	./engine/probe.c	/^*probe = NULL;$/;"	v	file:
+probe_add	./engine/probe.c	/^void probe_add(void *udata, int type, const char *host, short port, const char *url, int cycle, probecb cb)$/;"	f
+probe_base	./engine/probe.c	/^*probe_base = NULL;$/;"	v	typeref:struct:event_base	file:
+probe_cb	./engine/store.c	/^void * probe_cb(void *a,  int status)$/;"	f
+probe_cbtimeout	./engine/probe.c	/^static void probe_cbtimeout(evutil_socket_t fd, short what, void *arg)$/;"	f	file:
+probe_node_t	./engine/probe.c	/^} probe_node_t;$/;"	t	typeref:struct:__anon24	file:
+probe_refresh	./engine/probe.c	/^void probe_refresh(void *udata, void *node)$/;"	f
+probe_report	./engine/probe.c	/^    probecb             probe_report;$/;"	m	struct:__anon24	file:
+probe_report	./engine/probe.c	/^    probecb             probe_report;$/;"	m	struct:__anon25	file:
+probe_t	./engine/probe.c	/^} probe_t;$/;"	t	typeref:struct:__anon26	file:
+probe_type	./engine/probe.c	/^    int                 probe_type;$/;"	m	struct:__anon24	file:
+probe_unit_t	./engine/probe.c	/^} probe_unit_t;$/;"	t	typeref:struct:__anon25	file:
+probecb	./engine/probe.h	/^typedef void * (*probecb)(void *udata, int h);$/;"	t
+probekey	./engine/obj.h	/^    uint32_t      probekey;$/;"	m	struct:__anon13
+pstatus	./engine/probe.c	/^    int                 pstatus;$/;"	m	struct:__anon24	file:
+pswd	./db/redis.c	/^    char               *pswd;$/;"	m	struct:__anon8	file:
+pth	./utils/tmp/arch.c	/^    pthread_t       pth;$/;"	m	struct:__anon5	file:
+ptype	./engine/obj.h	/^    uint8_t       ptype;$/;"	m	struct:__anon14
+ptype	./engine/register.c	/^    char 	ptype[51]; \/\/- use for register type$/;"	m	struct:register_param	file:
+pvind	./engine/obj.h	/^    void         *pvind;$/;"	m	struct:store_s
+pvind	./engine/probe.c	/^    void            *pvind;$/;"	m	struct:__anon26	file:
+queue_lock	./utils/tmp/arch.c	/^    pthread_mutex_t queue_lock;$/;"	m	struct:__anon5	file:
+random_route	./engine/route.c	/^gdsl_list_t random_route(gdsl_list_t node_list,gdsl_list_t return_list)$/;"	f
+rdbc	./engine/obj.h	/^    int         rdbc;$/;"	m	struct:__anon12
+rdbconn	./engine/obj.h	/^    redisContext    *rdbconn;$/;"	m	struct:__anon19
+rdbhost	./engine/obj.h	/^    uint8_t     rdbhost[16];$/;"	m	struct:__anon12
+rdbkey	./engine/obj.h	/^    uint8_t     rdbkey[128];$/;"	m	struct:__anon12
+rdbport	./engine/obj.h	/^    int         rdbport;$/;"	m	struct:__anon12
+rdbs	./db/redis.c	/^    redisContext       *rdbs[4];$/;"	m	struct:__anon8	file:
+rdlock	./engine/obj.h	/^    pthread_mutex_t  rdlock;$/;"	m	struct:__anon19
+readbuffer	./utils/arch.c	/^static int readbuffer(int i, char *buf, int bufsize)$/;"	f	file:
+readcb	./engine/probe.c	/^static void readcb(struct bufferevent *bev, void *arg)$/;"	f	file:
+readpos	./utils/arch.c	/^    int readpos[2];$/;"	m	struct:__anon7	file:
+received	./engine/obj.h	/^    int              received;$/;"	m	struct:__anon11
+recv_incomplete	./engine/obj.h	/^    uint8_t         *recv_incomplete;$/;"	m	struct:__anon11
+recv_queue	./engine/obj.h	/^    gdsl_list_t      recv_queue;$/;"	m	struct:__anon11
+recvnum	./engine/obj.h	/^    int              recvnum;$/;"	m	struct:__anon11
+redis_free	./db/redis.c	/^redis_free()$/;"	f
+redis_get_areaid	./engine/store.c	/^static int redis_get_areaid(int i, const char *str, void *phint)$/;"	f	file:
+redis_get_dns_business_key	./engine/store.c	/^static int redis_get_dns_business_key(int i, const char * str, void *phint)$/;"	f	file:
+redis_get_dns_type	./engine/store.c	/^static int redis_get_dns_type(int i, const char * str, void *phint)$/;"	f	file:
+redis_get_info	./db/redis.c	/^redis_get_info(void *pobj, uint8_t *key, void *phint, int(blockfunc)(int, const char*, void *))$/;"	f
+redis_get_ipaddr	./engine/store.c	/^static int redis_get_ipaddr(int i, const char * str, void * phint)$/;"	f	file:
+redis_get_name	./engine/store.c	/^static int redis_get_name(int i, const char * str, void *phint)$/;"	f	file:
+redis_get_node	./engine/store.c	/^static int redis_get_node(int i, const char *str, void *phint)$/;"	f	file:
+redis_get_node_keys	./engine/store.c	/^static int redis_get_node_keys(int i, const char * str, void *phint)$/;"	f	file:
+redis_get_type	./engine/store.c	/^static int redis_get_type(int i, const char *str, void *phint)$/;"	f	file:
+redis_route	./engine/route.c	/^gdsl_list_t redis_route(gdsl_list_t node_list, gdsl_list_t return_list, const char *domain)$/;"	f
+redis_set_info	./db/redis.c	/^redis_set_info(void *pobj, uint8_t *key)$/;"	f
+redispool_t	./db/redis.c	/^} redispool_t;$/;"	t	typeref:struct:__anon8	file:
+regbase	./engine/register.c	/^struct event_base *regbase = NULL;$/;"	v	typeref:struct:event_base
+register_check	./engine/register.c	/^register_check(register_param_t *reg_para)$/;"	f	file:
+register_dispatch	./engine/register.c	/^register_dispatch(void *udata)$/;"	f
+register_filter	./engine/register.c	/^register_filter(char *uri, char *out)$/;"	f
+register_init	./engine/register.c	/^register_init(content_t *pdata )$/;"	f
+register_matchcmd	./engine/register.c	/^register_matchcmd(const char *uri)$/;"	f
+register_opper	./engine/register.c	/^register_opper(register_param_t *reg_param, char *out)$/;"	f	file:
+register_param	./engine/register.c	/^typedef struct register_param{$/;"	s	file:
+register_param_t	./engine/register.c	/^}register_param_t;$/;"	t	typeref:struct:register_param	file:
+registration	./engine/obj.h	/^    gdsl_queue_t     registration;$/;"	m	struct:__anon10
+registration	./engine/obj.h	/^    gdsl_queue_t     registration;$/;"	m	struct:__anon19
+reglock	./engine/obj.h	/^    pthread_mutex_t  reglock;$/;"	m	struct:__anon10
+reglock	./engine/obj.h	/^    pthread_mutex_t  reglock;$/;"	m	struct:__anon19
+release_caccess	./engine/access.c	/^release_caccess(caccess_t *ca)$/;"	f
+resends	./msg.h	/^    int       resends;$/;"	m	struct:dnsmsg_s
+reserved	./msg.h	/^                uint8_t   reserved[8];$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+reserved	./msg.h	/^                uint8_t   reserved[8];$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon3
+reserved	./msg.h	/^                uint8_t   reserved[8];$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+reserved	./msg.h	/^    int       reserved;$/;"	m	struct:dnsmsg_s
+rlock	./db/redis.c	/^    pthread_mutex_t     rlock[4];$/;"	m	struct:__anon8	file:
+root_handler	./vind.c	/^void root_handler(struct evhttp_request *req, void *arg)$/;"	f
+route_owner	./engine/store.c	/^int route_owner(unsigned long ip, char * ip_code, char * isp)$/;"	f
+rpl	./db/redis.c	/^static redispool_t *rpl = NULL;$/;"	v	file:
+s	./utils/tmp/arch.h	/^static int s = 0;$/;"	v
+score	./engine/register.c	/^char    score[10] = {0};$/;"	v
+search_child	./engine/core.c	/^search_child (inode_t *cc, char* nid) $/;"	f	file:
+search_domain	./engine/store.c	/^static int search_domain(ngroup_t *ng, void *key)$/;"	f	file:
+search_group	./engine/store.c	/^static int search_group(ngroup_t *ng, void *key)$/;"	f	file:
+search_node	./engine/store.c	/^static int search_node(node_t *ng, void *key)$/;"	f	file:
+search_node_key	./engine/store.c	/^static int search_node_key(void *E, void *str)$/;"	f	file:
+search_store	./engine/store.c	/^int search_store(void *store, const char *name,  uint32_t c_ip, uint32_t res[RES_NUM], uint32_t *ttl)$/;"	f
+sen_status	./engine/obj.h	/^    int            sen_status;$/;"	m	struct:store_s
+send_incomplete	./engine/obj.h	/^    uint8_t         *send_incomplete;$/;"	m	struct:__anon11
+send_lock	./engine/register.c	/^pthread_mutex_t send_lock;$/;"	v
+send_queue	./engine/obj.h	/^    gdsl_list_t      send_queue;$/;"	m	struct:__anon11
+send_time	./msg.h	/^    time_t    send_time;$/;"	m	struct:dnsmsg_s
+sentity	./engine/obj.h	/^    gdsl_list_t    sentity;$/;"	m	struct:store_s
+sentsum	./engine/obj.h	/^    int              sentsum;$/;"	m	struct:__anon11
+seq	./msg.h	/^        uint32_t seq;$/;"	m	struct:dnsmsg_s::_dns_pdu
+set_module	./utils/arch.c	/^int set_module(const char *mode)$/;"	f
+signal	./utils/arch.c	/^    pthread_cond_t signal;$/;"	m	struct:__anon7	file:
+size	./msg.h	/^    uint32_t  size;$/;"	m	struct:dnsmsg_s
+snode_t	./engine/obj.h	/^} snode_t;$/;"	t	typeref:struct:__anon13
+startup_req	./msg.h	/^            } startup_req;$/;"	m	union:dnsmsg_s::_dns_pdu::__anon1	typeref:struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+startup_res	./msg.h	/^            } startup_res;$/;"	m	union:dnsmsg_s::_dns_pdu::__anon1	typeref:struct:dnsmsg_s::_dns_pdu::__anon1::__anon3
+startupreq	./msg.h	34;"	d
+startupres	./msg.h	39;"	d
+status	./engine/obj.h	/^    uint16_t      status;$/;"	m	struct:__anon13
+status	./engine/obj.h	/^    uint32_t         status;$/;"	m	struct:__anon11
+status	./engine/obj.h	/^    uint32_t         status;$/;"	m	struct:__anon20
+status	./engine/obj.h	/^    uint32_t      status;$/;"	m	struct:__anon14
+status	./engine/obj.h	/^    uint8_t        status;$/;"	m	struct:store_s
+status	./engine/probe.c	/^    int                 status;$/;"	m	struct:__anon25	file:
+status	./msg.h	/^                uint8_t   status;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon3
+status_req	./msg.h	/^            } status_req;$/;"	m	union:dnsmsg_s::_dns_pdu::__anon1	typeref:struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+statusreq	./msg.h	50;"	d
+statusres	./msg.h	40;"	d
+store	./engine/obj.h	/^    store_t         *store;$/;"	m	struct:__anon19
+store	./engine/obj.h	/^    void          *store;$/;"	m	struct:__anon14
+store_s	./engine/obj.h	/^typedef struct store_s {$/;"	s
+store_t	./engine/obj.h	/^} store_t;$/;"	t	typeref:struct:store_s
+super_probe	./engine/probe.c	/^static void super_probe(void *udata)$/;"	f	file:
+t_attribute	./engine/obj.h	/^    type_t        t_attribute; $/;"	m	struct:__anon17
+thread	./engine/obj.h	/^    pthread_t        thread;$/;"	m	struct:__anon10
+thread	./utils/arch.c	/^    pthread_t thread;$/;"	m	struct:__anon7	file:
+threadpool_t	./include/threads.h	/^typedef struct threadpool_t threadpool_t;$/;"	t	typeref:struct:threadpool_t
+threshold	./engine/obj.h	/^    uint16_t      threshold;$/;"	m	struct:__anon13
+time	./engine/obj.h	/^    time_t        time;$/;"	m	struct:__anon15
+time	./engine/obj.h	/^    time_t      time;$/;"	m	struct:__anon14
+timebase	./utils/arch.c	/^    uint32_t timebase;$/;"	m	struct:__anon7	file:
+timebase	./utils/tmp/arch.c	/^    uint32_t timebase;$/;"	m	struct:__anon5	file:
+timekey	./engine/obj.h	/^    uint64_t      timekey;$/;"	m	struct:__anon13
+timer	./engine/probe.c	/^    struct event       *timer;$/;"	m	struct:__anon25	typeref:struct:__anon25::event	file:
+tmpscore	./engine/register.c	/^char    tmpscore[10] = {0};$/;"	v
+ttl	./engine/obj.h	/^    int           ttl;$/;"	m	struct:__anon17
+ttl	./engine/obj.h	/^    uint32_t    ttl;$/;"	m	struct:__anon16
+ttl	./engine/register.c	/^    char    ttl[8];$/;"	m	struct:register_param	file:
+tv	./engine/obj.h	/^    struct timeval   tv;$/;"	m	struct:__anon11	typeref:struct:__anon11::timeval
+tv	./engine/probe.c	/^    struct timeval      tv;$/;"	m	struct:__anon24	typeref:struct:__anon24::timeval	file:
+type	./engine/obj.h	/^    int              type;$/;"	m	struct:__anon11
+type	./engine/obj.h	/^    int              type;$/;"	m	struct:__anon20
+type	./engine/obj.h	/^    uint32_t      type;$/;"	m	struct:__anon17
+type	./engine/register.c	/^    char 	type[51];   $/;"	m	struct:register_param	file:
+type	./engine/reply.h	/^    int            type;             $/;"	m	struct:__anon23
+type	./msg.h	/^                uint32_t  type;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon2
+type_lock	./engine/register.c	/^pthread_mutex_t type_lock;$/;"	v
+type_t	./engine/obj.h	/^} type_t;$/;"	t	typeref:struct:__anon16
+udata	./engine/probe.c	/^    void               *udata;$/;"	m	struct:__anon24	file:
+update	./engine/probe.c	/^    time_t              update;$/;"	m	struct:__anon24	file:
+update_node	./engine/probe.c	/^static void update_node(probe_node_t *node, int status)$/;"	f	file:
+update_node_name	./engine/store.c	/^static int update_node_name(gdsl_list_t list, size_t size)$/;"	f	file:
+uptime	./engine/obj.h	/^    time_t        uptime;$/;"	m	struct:__anon17
+uri	./engine/register.c	/^    char    uri[1024];$/;"	m	struct:register_param	file:
+url	./engine/obj.h	/^    char          *url;$/;"	m	struct:__anon14
+url	./engine/obj.h	/^    char          url[256];$/;"	m	struct:__anon13
+url	./engine/probe.c	/^    char               *url;$/;"	m	struct:__anon24	file:
+verror_str	./utils/arch.c	/^const char *verror_str(int errval) {$/;"	f
+vind_server	./engine/core.c	/^vind_server(content_t *cn, const char *host, int port)$/;"	f
+vindns_create	./engine/core.c	/^vindns_create(content_t *cn, short port)$/;"	f
+voole_error_string	./utils/arch.c	/^const char *voole_error_string[] = {$/;"	v
+weights	./engine/obj.h	/^    int           weights;$/;"	m	struct:__anon13
+weights	./engine/obj.h	/^    uint8_t       weights;$/;"	m	struct:__anon14
+wevent_active	./engine/core.c	/^wevent_active(content_t *cn, caccess_t *ca)$/;"	f
+width	./engine/obj.h	/^    uint32_t         width;$/;"	m	struct:__anon20
+width	./engine/obj.h	/^    uint32_t      width;$/;"	m	struct:__anon14
+width	./msg.h	/^                uint32_t  width;$/;"	m	struct:dnsmsg_s::_dns_pdu::__anon1::__anon4
+wk	./engine/obj.h	/^    void            *wk;$/;"	m	struct:__anon9
+wobj_free	./vind.c	/^void wobj_free(wobj_t *pdev)$/;"	f
+wobj_t	./engine/obj.h	/^} wobj_t;$/;"	t	typeref:struct:__anon9
+worker	./vind.c	/^int worker = 0;$/;"	v
+worker_destroy	./vind.c	/^void worker_destroy(worker_t *wk)$/;"	f
+worker_t	./engine/obj.h	/^} worker_t;$/;"	t	typeref:struct:__anon10
+worker_thread	./vind.c	/^void worker_thread(worker_t *wk)$/;"	f
+workers	./engine/obj.h	/^    worker_t        *workers[4];$/;"	m	struct:__anon19
+write_queue	./utils/tmp/arch.c	/^    gdsl_queue_t    write_queue;$/;"	m	struct:__anon5	file:
+writebuffer	./utils/arch.c	/^static int writebuffer(int i, char *buf, int datalen)$/;"	f	file:
+writepos	./utils/arch.c	/^    int writepos[2];$/;"	m	struct:__anon7	file:
+xtoi	./utils/arch.c	/^int xtoi(const char *p)$/;"	f
